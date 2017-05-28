@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="db.exercise.controller.RootController">
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="810.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="TOP" lineSpacing="5.0" mnemonicParsing="false" text="Клиенты" onAction="#showClientsTable" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets right="15.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" lineSpacing="5.0" mnemonicParsing="false" text="Терминалы" onAction="#showShopTable" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets right="15.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" layoutX="102.0" layoutY="13.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#showTransactionTable" text="Транзакции" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets right="15.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="13.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#closeAllTabs" text="Close all" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets right="15.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets left="5.0" top="5.0" />
+         </opaqueInsets>
+      </HBox>
+   </bottom>
+</BorderPane>
