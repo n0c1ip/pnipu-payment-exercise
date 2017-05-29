@@ -13,7 +13,7 @@ public class DataConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/payment");
+		dataSource.setUrl("jdbc:mysql://192.168.0.50:3306/payment");
 		dataSource.setUsername("root");
 		dataSource.setPassword("root");
 		return dataSource;

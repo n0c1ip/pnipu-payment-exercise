@@ -1,0 +1,22 @@
+<div>
+	Номер карты:<br>
+  	<input type="text" id="card" value="" placeholder="Введите номер карты"><br>
+  	Сумма:<br>
+  	<input type="text" id="amount" value="{number_format($sum, 2, '.', '')}" readonly><br><br>
+    	<button id="submit"/>Оплатить заказ через систему Махнутин.Деньги</button>
+	<script type="text/javascript">
+		$('#submit').click(function() {
+			var card = $('#card').val();
+			$.ajax({
+			  type: 'GET',
+			  crossDomain: true,
+			  url: "http://localhost:8080/rest/payment?token=TOKEN&cardNumber=" + card + "&amount=" + {$sum} + "&orderId={$orderId}",
+			  dataType: 'json',
+			  success: function(data) {
+				alert(data['message']);
+				window.location.href="{$return_url}";
+			  }
+			});
+		});
+        </script>
+</div>
